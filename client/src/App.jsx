@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import CreateMystery from './CreateMystery'
 import './App.css'
 
-const API_URL = 'http://localhost:5000/api/cases'
+const API_URL = 'https://ai-mystery-room-1-yi3d.onrender.com/api/cases'
 
 function App() {
   const [mystery, setMystery] = useState(null)
