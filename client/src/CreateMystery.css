@@ -1,0 +1,140 @@
+
+.create-page {
+  min-height: 100vh;
+  background: #100e1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 18px;
+  color: white;
+}
+
+.create-card {
+  width: 100%;
+  max-width: 650px;
+  background: #1c182b;
+  border: 1px solid #493466;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 0 35px #8b5cf622;
+}
+
+.create-icon {
+  font-size: 45px;
+  text-align: center;
+}
+
+.create-label {
+  text-align: center;
+  color: #a78bfa;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.create-card h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.create-description {
+  text-align: center;
+  color: #aaa5bb;
+  margin-bottom: 35px;
+}
+
+.create-card label {
+  display: block;
+  font-weight: bold;
+  margin: 22px 0 10px;
+}
+
+.create-card textarea {
+  width: 100%;
+  resize: vertical;
+  background: #100e1b;
+  border: 1px solid #493466;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.create-card textarea:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 12px #8b5cf644;
+}
+
+.character-count {
+  color: #888197;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 7px;
+}
+
+.difficulty-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.difficulty-button {
+  padding: 15px 8px;
+  border: 1px solid #493466;
+  border-radius: 10px;
+  background: #100e1b;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.difficulty-button.selected {
+  border: 2px solid #a78bfa;
+  background: #352452;
+  box-shadow: 0 0 15px #8b5cf644;
+}
+
+.difficulty-info {
+  text-align: center;
+  color: #c4b5fd;
+  margin: 18px 0;
+  font-size: 13px;
+}
+
+.start-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(90deg, #7543bd, #9b59d0);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  opacity: 0.9;
+}
+
+.back-text {
+  color: #888197;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 22px;
+}
+
+@media (max-width: 500px) {
+  .create-card {
+    padding: 22px;
+  }
+
+  .create-card h1 {
+    font-size: 26px;
+  }
+}

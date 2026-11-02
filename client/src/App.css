@@ -1,0 +1,271 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #100e1b;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: #191528;
+  border-bottom: 1px solid #332849;
+}
+
+.topbar h2 {
+  margin: 0;
+  color: #c4a5ff;
+}
+
+.active-status {
+  color: #86efac;
+  font-size: 13px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.main-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 22px;
+}
+
+.case-heading {
+  margin-bottom: 28px;
+}
+
+.case-label,
+.section-label {
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.case-heading h1 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.subtitle,
+.section-heading p {
+  color: #a1a1aa;
+}
+
+.timer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(120deg, #30205a, #211b38);
+  border: 1px solid #6843a8;
+  border-radius: 15px;
+  padding: 20px 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 20px #8b5cf622;
+}
+
+.timer-card h2 {
+  font-size: 38px;
+  color: #c4b5fd;
+  margin: 8px 0 0;
+}
+
+.timer-icon {
+  font-size: 35px;
+}
+
+.story-card,
+.suspect-card,
+.clue-card {
+  background: #1c182b;
+  border: 1px solid #352a49;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.story-card {
+  margin-bottom: 35px;
+  line-height: 1.8;
+  color: #d4d4e0;
+}
+
+.story-card h2 {
+  color: white;
+}
+
+.section {
+  margin: 35px 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin-bottom: 5px;
+}
+
+.count-badge {
+  background: #352452;
+  color: #c4b5fd;
+  padding: 9px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.suspect-grid,
+.clue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.suspect-card,
+.clue-card {
+  transition: 0.25s;
+}
+
+.suspect-card:hover,
+.clue-card:hover {
+  border-color: #a78bfa;
+  transform: translateY(-3px);
+  box-shadow: 0 0 16px #8b5cf622;
+}
+
+.suspect-emoji,
+.clue-icon {
+  font-size: 35px;
+}
+
+.suspect-card h3,
+.clue-card h3 {
+  margin-bottom: 7px;
+}
+
+.suspect-card p,
+.clue-description,
+.hidden-clue {
+  color: #aaa5bb;
+  line-height: 1.6;
+}
+
+.suspect-number {
+  color: #a78bfa;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.progress-track {
+  height: 8px;
+  background: #332849;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  transition: width 0.3s;
+}
+
+.discover-button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #7543bd;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.discover-button:hover {
+  background: #9162df;
+}
+
+.discover-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.found-label {
+  display: inline-block;
+  color: #86efac;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.time-up,
+.all-found {
+  padding: 18px;
+  background: #29203b;
+  border: 1px solid #8b5cf6;
+  border-radius: 12px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.time-up {
+  color: #fca5a5;
+}
+
+.all-found {
+  color: #86efac;
+}
+
+footer {
+  text-align: center;
+  color: #777184;
+  padding: 30px 10px;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 18px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .case-heading h1 {
+    font-size: 27px;
+  }
+
+  .suspect-grid,
+  .clue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timer-card h2 {
+    font-size: 32px;
+  }
+}
