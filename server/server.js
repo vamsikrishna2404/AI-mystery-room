@@ -14,7 +14,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173'
+  origin: [
+    'http://localhost:5173',
+    'https://ai-mystery-room-eight-hazel.vercel.app',
+    'https://ai-mystery-room-9qoa6b19j-vamsi-d5d5.vercel.app'
+  ]
 }));
 
 app.use(express.json());
